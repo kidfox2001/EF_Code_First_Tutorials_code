@@ -9,7 +9,7 @@ namespace ConsoleApplication1
 {
     class Program
     {
-        // เปิดดูที่ objct sql server
+        // เปิดดูที่ object sql server
 
         static void Main(string[] args)
         {
@@ -20,7 +20,12 @@ namespace ConsoleApplication1
                 {
                     Student stud = new Student() { StudentName = "New Student2" };
 
-                    ctx.Students.Add(stud);
+                    //ctx.Students.Add(stud);
+
+                    Standard std = new Standard() { StandardName = "Test1", StandardId = 1 };
+                    std.Students.Add(stud);
+
+                    ctx.Standards.Add(std);
                     ctx.SaveChanges();
                 }
             }
