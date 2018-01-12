@@ -20,12 +20,13 @@ namespace ConsoleApplication1
                 {
                     Student stud = new Student() { StudentName = "New Student2" };
 
-                    //ctx.Students.Add(stud);
+                    ctx.Students.Add(stud);
 
-                    Standard std = new Standard() { StandardName = "Test1", StandardId = 1 };
-                    std.Students.Add(stud);
+                    //Standard std = new Standard() { StandardName = "Test1", StandardId = 1 };
+                   // std.Students.Add(stud);
+                    //ctx.Standards.Add(std);
 
-                    ctx.Standards.Add(std);
+
                     ctx.SaveChanges();
                 }
             }

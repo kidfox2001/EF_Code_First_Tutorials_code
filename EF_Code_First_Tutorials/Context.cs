@@ -32,8 +32,15 @@ namespace EF_Code_First_Tutorials
         {
 
         }
+
+        //[Key]
+        //public int StudentKey { get; set; }
+
+        // [Column(Order = 0)] ไว้ใช้เรียงลำดับ column ใน design
         public int StudentID { get; set; } // default ชื่อคี <class name>Id จะมองว่าเป็น key
+        [Column("Name")]
         public string StudentName { get; set; }
+        [Column("DoB", TypeName = "DateTime2")]
         public DateTime? DateOfBirth { get; set; }
         public byte[] Photo { get; set; }
         public decimal Height { get; set; }
