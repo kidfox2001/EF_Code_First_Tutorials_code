@@ -23,8 +23,35 @@ namespace EF_Code_First_Tutorials
         public DbSet<Student> Students { get; set; }
         public DbSet<Standard> Standards { get; set; }
 
-    }
+        // Fluent API
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            //Configure default schema
+            modelBuilder.HasDefaultSchema("Admin");
 
+
+            //Map entity to table
+            modelBuilder.Entity<Student>().ToTable("StudentInfo");
+            modelBuilder.Entity<Standard>().ToTable("StandardInfo", "dbo");
+
+
+            // exe 1
+            //modelBuilder.Entity<Student>().Map(m =>
+            //{
+            //    m.Properties(p => new { p.StudentId, p.StudentName });
+            //    m.ToTable("StudentInfo");
+
+            //}).Map(m =>
+            //{
+            //    m.Properties(p => new { p.StudentId, p.Height, p.Weight, p.Photo, p.DateOfBirth });
+            //    m.ToTable("StudentInfoDetail");
+
+            //});
+
+            //modelBuilder.Entity<Standard>().ToTable("StandardInfo");
+        }
+
+    }
 
     public class Student
     {
