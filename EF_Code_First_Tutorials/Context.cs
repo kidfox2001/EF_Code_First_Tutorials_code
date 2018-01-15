@@ -11,6 +11,9 @@ namespace EF_Code_First_Tutorials
 {
     // ค่า default พื้นฐานที่ ef จะ gen ให้ ดูที่ http://www.entityframeworktutorial.net/code-first/code-first-conventions.aspx
     // ดูเรื่องการแตก table inheritance ที่ http://www.entityframeworktutorial.net/code-first/inheritance-strategy-in-code-first.aspx
+    // Data Annotations http://www.entityframeworktutorial.net/code-first/dataannotation-in-code-first.aspx
+    // Fluent API http://www.entityframeworktutorial.net/code-first/fluent-api-in-code-first.aspx
+
 
     public class SchoolContext : DbContext
     {
@@ -19,7 +22,7 @@ namespace EF_Code_First_Tutorials
         {
 
         }
-
+         
         public DbSet<Student> Students { get; set; }
         public DbSet<Standard> Standards { get; set; }
 
@@ -27,12 +30,12 @@ namespace EF_Code_First_Tutorials
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Configure default schema
-            modelBuilder.HasDefaultSchema("Admin");
+            //modelBuilder.HasDefaultSchema("Admin");
 
 
             //Map entity to table
-            modelBuilder.Entity<Student>().ToTable("StudentInfo");
-            modelBuilder.Entity<Standard>().ToTable("StandardInfo", "dbo");
+            //modelBuilder.Entity<Student>().ToTable("StudentInfo");
+            //modelBuilder.Entity<Standard>().ToTable("StandardInfo", "dbo");
 
 
             // exe 1

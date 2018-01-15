@@ -1,15 +1,3 @@
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\EF_Code_First_Tutorials.dll
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\EntityFramework.dll
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.dll
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\EF_Code_First_Tutorials.pdb
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\EntityFramework.xml
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.xml
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-C:\test\EF_Code_First_Tutorials\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
 C:\test\EF_Code_First_Tutorials_code\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
 C:\test\EF_Code_First_Tutorials_code\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
 C:\test\EF_Code_First_Tutorials_code\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
