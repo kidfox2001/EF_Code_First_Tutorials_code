@@ -18,7 +18,10 @@ namespace ConsoleApplication1
             {
                 using (var ctx = new SchoolContext())
                 {
-                    Student stud = new Student() { StudentName = "New Student2" };
+
+                    //var x = ctx.Students.Where(q => q.StudentName == "New Student2").SingleOrDefault();
+
+                     Student stud = new Student() { StudentName = "New Student4" };
 
                     ctx.Students.Add(stud);
 

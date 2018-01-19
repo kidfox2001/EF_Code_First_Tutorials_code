@@ -13,6 +13,9 @@ namespace EF_Code_First_Tutorials
     // ดูเรื่องการแตก table inheritance ที่ http://www.entityframeworktutorial.net/code-first/inheritance-strategy-in-code-first.aspx
     // Data Annotations http://www.entityframeworktutorial.net/code-first/dataannotation-in-code-first.aspx
     // Fluent API http://www.entityframeworktutorial.net/code-first/fluent-api-in-code-first.aspx
+    // วิธี gen from database http://www.entityframeworktutorial.net/code-first/code-first-from-existing-database.aspx
+    // แบ่ง Fluent API เป็นส่วนๆ http://www.entityframeworktutorial.net/code-first/move-configurations-to-seperate-class-in-code-first.aspx
+    // รูปแแบบการสร้างดาต้าเบส http://www.entityframeworktutorial.net/code-first/database-initialization-strategy-in-code-first.aspx
 
 
     public class SchoolContext : DbContext
@@ -21,6 +24,8 @@ namespace EF_Code_First_Tutorials
             : base()
         {
 
+            //Disable initializer ตัวอย่างการปิดการ auto create database
+            //Database.SetInitializer<SchoolContext>(null);
         }
          
         public DbSet<Student> Students { get; set; }

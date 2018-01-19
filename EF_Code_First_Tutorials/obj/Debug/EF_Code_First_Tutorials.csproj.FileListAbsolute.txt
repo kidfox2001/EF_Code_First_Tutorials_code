@@ -7,3 +7,4 @@ C:\test\EF_Code_First_Tutorials_code\EF_Code_First_Tutorials\obj\Debug\EF_Code_F
 C:\test\EF_Code_First_Tutorials_code\EF_Code_First_Tutorials\bin\Debug\EF_Code_First_Tutorials.dll.config
 C:\test\EF_Code_First_Tutorials_code\EF_Code_First_Tutorials\bin\Debug\EF_Code_First_Tutorials.dll
 C:\test\EF_Code_First_Tutorials_code\EF_Code_First_Tutorials\bin\Debug\EF_Code_First_Tutorials.pdb
+C:\test\EF_Code_First_Tutorials_code\EF_Code_First_Tutorials\obj\Debug\EF_Code_First_Tutorials.csprojResolveAssemblyReference.cache
