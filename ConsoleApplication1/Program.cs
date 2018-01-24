@@ -40,6 +40,7 @@ namespace ConsoleApplication1
             }
             finally
             {
+
                 Console.WriteLine("finnish");
                 Console.ReadLine();
             }
