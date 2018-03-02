@@ -23,6 +23,11 @@ namespace EF_Code_First_Tutorials
         public SchoolContext()
             : base()
         {
+            // ตย. การเซ้ตค่าการ int db แบบต่างๆ
+            //Database.SetInitializer<SchoolContext>(new CreateDatabaseIfNotExists<SchoolContext>());
+            //Database.SetInitializer<SchoolDBContext>(new DropCreateDatabaseIfModelChanges<SchoolDBContext>());
+            //Database.SetInitializer<SchoolDBContext>(new DropCreateDatabaseAlways<SchoolDBContext>());
+            //Database.SetInitializer<SchoolDBContext>(new SchoolDBInitializer());
 
             //Disable initializer ตัวอย่างการปิดการ auto create database
             //Database.SetInitializer<SchoolContext>(null);
